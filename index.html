@@ -1,0 +1,57 @@
+<!--
+ *                        _oo0oo_
+ *                       o8888888o
+ *                       88" . "88
+ *                       (| -_- |)
+ *                       0\  =  /0
+ *                     ___/`---'\___
+ *                   .' \\|     |// '.
+ *                  / \\|||  :  |||// \
+ *                 / _||||| -:- |||||- \
+ *                |   | \\\  - /// |   |
+ *                | \_|  ''\---/''  |_/ |
+ *                \  .-\__  '-'  ___/-. /
+ *              ___'. .'  /--.--\  `. .'___
+ *           ."" '<  `.___\_<|>_/___.' >' "".
+ *          | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *          \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *      =====`-.____`.___ \_____/___.-`___.-'=====
+ *                        `=---='
+ * 
+ * 
+ *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * 
+ *            佛祖保佑     永不宕机     永无BUG
+ * 
+ * @Author: DarkFox
+ * @Date: 2025-02-11 16:23:54
+ * @LastEditTime: 2025-02-11 16:38:53
+ * @LastEditors: DarkFox
+ * @Description: 
+ * @FilePath: \[250211]数据处理测试\index.html
+ * Designed by DarkFox
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>无刷电机演示</title>
+    <style>
+        #controls {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button onclick="startRotation()">启动</button>
+        <button onclick="stopRotation()">停止</button>
+        <label>转速: <input type="range" id="speed" min="1" max="10"></label>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="motor.js"></script>
+</body>
+</html> 
